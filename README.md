@@ -48,20 +48,7 @@ it becomes obvious that the use of GPU for filtering is completely justified.
 ![alt text](https://user-images.githubusercontent.com/52837578/148710675-5f16d6c7-5da6-4ae6-8665-a301f1942e79.png)
 
 
-     N    gpu_time    cpu_time    gpu_pi    cpu_pi    acceleration
-------  ----------  ----------  --------  --------  --------------
- 10000  0.979175      0.2339     3.14015   3.13998        0.238874
- 20000  0.00497985    0.466735   3.14141   3.14324       93.7248
- 30000  0.00897622    0.702133   3.14132   3.14079       78.2215
- 40000  0.011004      0.916514   3.14367   3.14197       83.2894
- 50000  0.048898      1.15414    3.14333   3.1414        23.6029
- 60000  0.0618396     1.39305    3.14254   3.14472       22.5269
- 70000  0.0720167     1.62454    3.14225   3.14162       22.5578
- 80000  0.0809202     1.85376    3.14227   3.14192       22.9085
- 90000  0.0887427     2.12514    3.14268   3.14091       23.9472
-100000  0.105108      2.32553    3.14336   3.14051       22.1252
-
-
+![alt text](https://user-images.githubusercontent.com/52837578/148711157-ef177c7a-730c-4ce2-bfa4-2aeaf58bdec3.png)
 
 As we can see, algorithm for calculating the number of PI on the CPU and GPU was implemented.
 Both algorithms show good accuracy of calculations, and it is also shown that the algorithm implemented
