@@ -45,14 +45,14 @@ def main(N):
     cpu_pi = cpu_calculate_pi(ITER_COUNT, N).mean()
     cpu_time = time.time() - start
 
-    return gpu_time, cpu_time, gpu_pi, cpu_pi
+    return gpu_time, cpu_time, gpu_pi, cpu_pi, cpu_time / gpu_time
 
 
 if __name__ == '__main__':
     rows = []
     for N in range(10_000, 100_000 + 1, 10_000):
         rows.append([N, *main(N)])
-    print(tabulate(rows, headers=['N', 'gpu_time', 'cpu_time', 'gpu_pi', 'cpu_pi']))
+    print(tabulate(rows, headers=['N', 'gpu_time', 'cpu_time', 'gpu_pi', 'cpu_pi', 'acceleration']))
 
     plt.figure(figsize=(18, 4))
 
